@@ -13549,8 +13549,8 @@
         },
         {
           name: "Localhost",
-          wsUrl: "http://localhost:9092",
-          restUrl: "http://localhost:5000",
+          wsUrl: "https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/",
+          restUrl: "https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/",
         },
         {
           name: "A Workstation",
