@@ -25,60 +25,60 @@ function wsUpdateWallet(amt) {
 }
 
 // == images
-app.get("/_next/image", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/_next/image", (req, res) => {
   res.sendFile("crash.8a314e71.png", { root: "./_next/static/media" });
 });
 
 // == site
-app.get("/site", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/site", (req, res) => {
   fs.readFile("./INSERTED/data/site.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
 // == all-bets
-app.get("/live-feed/all-bets", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/live-feed/all-bets", (req, res) => {
   fs.readFile("./INSERTED/data/allbets.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
 // == active
-app.get("/user/promotion/deposits/active", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/user/promotion/deposits/active", (req, res) => {
   fs.readFile("./INSERTED/data/active.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
 // == affiliates
-app.get("/user/affiliates", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/user/affiliates", (req, res) => {
   fs.readFile("./INSERTED/data/affiliates.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
 // == user
-app.get("/user", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/user", (req, res) => {
   fs.readFile("./INSERTED/data/user.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
 // == chat
-app.get("/chat/history", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/chat/history", (req, res) => {
   fs.readFile("./INSERTED/data/history.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
 // == mines
-app.get("/games/mines", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/games/mines", (req, res) => {
   fs.readFile("./INSERTED/data/games/mines.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 });
 
-app.post("/games/mines/create", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/games/mines/create", (req, res) => {
   let betAmount = req.body.betAmount;
   let mines = req.body.mines;
   fs.readFile("./INSERTED/data/user.json", (err, userJsonData) => {
@@ -144,7 +144,7 @@ app.post("/games/mines/create", (req, res) => {
   });
 });
 
-app.post("/games/mines/action", (req, res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/games/mines/action", (req, res) => {
   let cashout = req.body.cashout;
   let mine = req.body.mine;
   fs.readFile("./INSERTED/data/user.json", (err, userJsonData) => {
@@ -294,20 +294,20 @@ app.post("/games/mines/action", (req, res) => {
 });
 
 // == cups
-app.get("/games/cups", (req,res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/games/cups", (req,res) => {
   fs.readFile("./INSERTED/data/games/cups.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData));
   });
 })
 
 // == plinko
-app.get("/games/plinko/multipliers", (req,res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/games/plinko/multipliers", (req,res) => {
   fs.readFile("./INSERTED/data/plinko.json", (err, jsonData) => {
     res.json(JSON.parse(jsonData))
   })
 })
 
-app.post("/games/plinko/roll", (req,res) => {
+app.get("https://f0e8b6c3a181141d0ddbd5691a43afe9.vercel.app/games/plinko/roll", (req,res) => {
   fs.readFile("./INSERTED/data/user.json", (err, userJsonData) => {
     let userData = JSON.parse(userJsonData)
     let amount = req.body.amount
