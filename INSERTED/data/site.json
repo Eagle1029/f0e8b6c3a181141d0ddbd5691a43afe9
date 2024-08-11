@@ -1,0 +1,16 @@
+{
+    "launchDate": "2020-07-05T17:00:00.000Z",
+    "geoBlock": false,
+    "launched": true,
+    "cluster": {
+        "currentInstance": "2fdfb43e-765b-4a8e-8abd-152ca68c83ed",
+        "visibleInstances": {
+            "1": {
+                "instanceId": "1",
+                "connectedClients": 1,
+                "lastUpdated": 1
+            }
+        }
+    },
+    "maintenanceEnabled": false
+}

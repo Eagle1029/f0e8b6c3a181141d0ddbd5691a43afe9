@@ -1,0 +1,29 @@
+{
+    "messages": [],
+    "trivia": {},
+    "siteSettings": {
+        "streamingUrl": "",
+        "streamingMessage": "",
+        "activeAnnouncement": {
+            "description": "Hello and welcome to Bloxflip Clone!",
+            "title": "Bloxflip Clone!",
+            "createdAt": 1700180522919,
+            "addedToChatRoomAt": 1719542760537,
+            "inChatRoom": false,
+            "themeUrl": "https://bloxflip.com/_next/static/media/buxback.213bf8c8.png",
+            "_id": ""
+        },
+        "bbStreaming": false,
+        "bbStreamPrefix": "",
+        "bbStreamId": "",
+        "bbStreamTitle": "",
+        "bbStreamHost": "",
+        "streaming": false
+    },
+    "rain": {
+        "active": false,
+        "players": [],
+        "prize": 0,
+        "timeLeft": 0
+    }
+}
